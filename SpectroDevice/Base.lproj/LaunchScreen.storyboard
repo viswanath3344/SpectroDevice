@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_wifi_connection" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-AE-XO7">
+                                <rect key="frame" x="75.5" y="231" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uiT-AE-XO7" secondAttribute="height" multiplier="1:1" id="1mv-N7-GwG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spectrometer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vv-oC-7O0">
+                                <rect key="frame" x="0.0" y="477" width="375" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="thT-2G-4dd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0078431372550000003" blue="0.0078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uiT-AE-XO7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IbD-mQ-4zk"/>
+                            <constraint firstItem="0Vv-oC-7O0" firstAttribute="top" secondItem="uiT-AE-XO7" secondAttribute="bottom" constant="21" id="aPT-J1-i4z"/>
+                            <constraint firstItem="uiT-AE-XO7" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.6" id="eHW-Rs-WFQ"/>
+                            <constraint firstItem="0Vv-oC-7O0" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="hbN-l2-ajw"/>
+                            <constraint firstItem="0Vv-oC-7O0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u34-Oq-FjK"/>
+                            <constraint firstItem="uiT-AE-XO7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ufB-Qi-Ctz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_wifi_connection" width="392" height="392"/>
+    </resources>
+</document>
